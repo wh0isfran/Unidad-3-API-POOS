@@ -3,13 +3,14 @@ from views.utils import leer_numero
 class MainView:
     @staticmethod
     def mostrar_menu() -> int:
-        print("\n" + "="*30)
-        print("    CLÍNICA - MENÚ PRINCIPAL")
-        print("="*30)
+        print("\n" + "="*50)
+        print("     CLÍNICA SANITARIA - MENÚ PRINCIPAL")
+        print("="*50)
         print("1.- Gestión de Pacientes")
         print("2.- Gestión de Departamentos")
-        print("0.- Salir")
-        print("="*30)
+        print("3.- Farmacia y Recetas Médicas (Consumo de API)")
+        print("0.- Salir del Sistema")
+        print("="*50)
         return leer_numero("Seleccione una opción: ")
 
     @staticmethod
